@@ -25,21 +25,47 @@ FORMS
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-	 <center>
-      <h1>VERIVICATION</h1>
-      <h5>Fill Out The Form Correctly</h5>
+      <h1>Personal Data</h1>
 	  <form action="/action_page.php">
-		<label for="fname">First name:</label><br>
-		<input type="text" id="fname" name="fname" value="Jotep"><br>
-	    <label for="lname">Last name:</label><br>
-	    <input type="text" id="lname" name="lname" value="Universe"><br><br>
-		<label for="lname">Email:</label><br>
-	    <input type="text" id="lname" name="lname" value="verivication@gmail.com"><br><br>
-		<label for="lname">Device:</label><br>
-	    <input type="text" id="lname" name="lname" value="Laptop/Pc/Handphone"><br><br>
-        <input type="submit" value="Submit" href="index.html">
+		<label for="fname">Full Name:</label>
+		<input type="text" id="fname" name="fname" placeholder="Fill Full Name"><br><br>
+		
+		<label for="lname">Email:</label>
+	    <input type="text" id="lname" name="lname" placeholder="Fill Email"><br><br>
+		
+		<label for="lname">Password:</label>
+	    <input type="password" id="pwd" name="pwd"><br><br>
+		
+		<label for="lname"> Date Of Birth:</label>
+		<input type="date" id="bdaydate" name="bdaydate"><br><br>
+		
+		<label for="lname">Gender:</label><br>
+	    <input type="radio" id="radio_group" name="lname" value="Male">Male<br>
+		<input type="radio" id="radio_group" name="lname" value="Female">Female<br><br>
+		
+		<label for="lname">Jenis Tempat Tinggal:</label>
+		<select name="cars" id="cars">
+		<option value="volvo">Rumah</option>
+		<option value="saab">Ruko</option>
+		<option value="mercedes">Apartemen</option>
+		<option value="audi">Jalanan</option>
+		</select><br><br>
+		
+		<label for="lname">Hobi:</label><br>
+	    <input type="checkbox" id="check_box" name="lname" value="Olah Raga"> Olah Raga <br>
+        <input type="checkbox" id="check_box" name="lname" value="Baca Buku"> Baca Buku <br>
+		<input type="checkbox" id="check_box" name="lname" value="Traveling"> Jalan-Jalan <br>
+		<input type="checkbox" id="check_box" name="lname" value="Gaming"> Main Game <br>
+		<input type="checkbox" id="check_box" name="lname" value="Nonton"> Nonton Film <br>
+		<input type="checkbox" id="check_box" name="lname" value="Bernyanyi"> Bernyanyi <br>
+		<input type="checkbox" id="check_box" name="lname" value="Menggambar"> Menggambar <br>
+		<input type="checkbox" id="check_box" name="lname" value="Menulis"> Menulis <br><br>
+		
+		<input type="button" onclick="alert('The Form Has Been Sent')" value="Submit!" onclick="index.html">
+		
+		<input type="reset" onclick="alert('The Form Has Been Reset')" value="Reset!">
+		
 	  </form>
-	  </center>
 	</div>
 	</div>
   
